@@ -47,10 +47,8 @@ body {
 
 section {
     height: auto;
-    margin: 50px auto;         
+    padding-top: 75px;
 }
-
-
 
 
 header {
@@ -143,12 +141,17 @@ nav ul  li a:hover {
 
 
 .menu {
-    height: auto;
-
+    h3 {
+        font-size: 36px;
+    }
 ul {
     text-align: left;
     li:nth-of-type(even){
         font-style: italic;
+    }
+    li:nth-of-type(odd) {
+        color: $blueColor;
+        font-size: 24px;
     }
 }
 
@@ -294,8 +297,10 @@ ul {
 }
 
 .FAQ {
-    width: 50%;
-    
+    ul {
+        margin: 0 auto;
+        width: 50%;
+    }
     ul li:nth-child(odd){
         font-size: 32px;
     }

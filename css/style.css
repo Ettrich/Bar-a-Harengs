@@ -40,7 +40,7 @@ body p, body a {
 
 section {
   height: auto;
-  margin: 50px auto;
+  padding-top: 75px;
 }
 
 header {
@@ -128,8 +128,8 @@ nav ul li a:hover {
   color: #fff;
 }
 
-.menu {
-  height: auto;
+.menu h3 {
+  font-size: 36px;
 }
 
 .menu ul {
@@ -138,6 +138,11 @@ nav ul li a:hover {
 
 .menu ul li:nth-of-type(even) {
   font-style: italic;
+}
+
+.menu ul li:nth-of-type(odd) {
+  color: #183e6f;
+  font-size: 24px;
 }
 
 .menu__row {
@@ -273,7 +278,8 @@ nav ul li a:hover {
   margin: 25px auto;
 }
 
-.FAQ {
+.FAQ ul {
+  margin: 0 auto;
   width: 50%;
 }
 
