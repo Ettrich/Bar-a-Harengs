@@ -20,6 +20,32 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body class="text-center">
+   <nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#home">Bar a harengs
+      <img class="navbar-logo" src="images/logo.jpg" alt=""></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+       <li><a href="#offer">Offer</a></li>
+			<li><a href="#menu">Menu</a></li>
+			<li><a href="#gallery">Gallery</a></li>
+			<li><a href="#about">About Us</a></li>
+   			<li><a href="#contact">Contact</a></li>
+			<li><a href="#meet">Meet Us</a></li>
+        	<li><a href="#faq">faq</a></li> 
+      </ul>     
+    </div>
+  </div>
+</nav>
+   
+   <!---
     <nav>
        <a href="#home"><img src="images/logo.jpg" alt=""></a>
         <ul>
@@ -33,6 +59,10 @@
         	<li><a href="#faq">faq</a></li>
         </ul>
     </nav>
+    --->
+    
+    
+    
 <header id="home">    
     <div class="header__title">
         <h1>Bar a harengs</h1>
@@ -69,7 +99,7 @@
             <div class="container">
                 <div class="row menu__row">
                     <div class="col-md-5">
-                        <div class="menu__photo menu__photo__1 box__shadow"></div>
+                       <img class="img-responsive box__shadow img__menu" src="images/herings1.jpg" alt="" title="">                      
                     </div>
                     <div class="col-md-6 salad">
                         <h3>Salad</h3>
@@ -112,7 +142,7 @@
                 </div>
                      <div class="row fish menu__row">
                     <div class="col-md-5">
-                        <div class="menu__photo menu__photo__2 box__shadow"></div>
+                          <img class="img-responsive box__shadow img__menu" src="images/herings__salad.jpg" alt="" title="">  
                     </div>
                     <div class="col-md-6">
                         <h3>Fish</h3>
@@ -155,7 +185,7 @@
                 </div>
                 <div class="row fish menu__row">
                     <div class="col-md-5">
-                        <div class="menu__photo menu__photo__3 box__shadow"></div>
+                         <img class="img-responsive box__shadow img__menu" src="images/bread1.jpg" alt="" title="">  
                     </div>
                     <div class="col-md-6">
                         <h3>Bread</h3>
@@ -204,34 +234,40 @@
           <div class="separator"></div>
         <div class="">
             <div class="row">
-                <div class="col-md-4 gallery__item gallery__item__1">
+                <div class="col-md-4 gallery__item">
+                <img clas="img-responsive" src="images/losos23.jpg" alt="">
                  <div class="cover">
                      <a href=""><span><i class="fa fa-search" aria-hidden="true"></i><br>Salad</span></a>
                 </div>
                 </div>
-                <div class="col-md-4 gallery__item gallery__item__2">
+                <div class="col-md-4 gallery__item">
+                    <img clas="img-responsive" src="images/salmon5.jpg" alt="">
                     <div class="cover">
                      <a href=""><span><i class="fa fa-search" aria-hidden="true"></i><br>Fish</span></a>
                 </div>
                 </div>
-                <div class="col-md-4 gallery__item gallery__item__3">
+                <div class="col-md-4 gallery__item">
+                 <img clas="img-responsive" src="images/salmon__dish.jpg" alt="">
                 <div class="cover">
                      <a href=""><span><i class="fa fa-search" aria-hidden="true"></i><br>Other</span></a>
                 </div>
                 </div>    
                 </div>
                       <div class="row">
-                <div class="col-md-4 gallery__item gallery__item__1">
+                <div class="col-md-4 gallery__item">
+                 <img clas="img-responsive" src="images/salmon3.jpg" alt="">
                  <div class="cover">
                      <a href=""><span><i class="fa fa-search" aria-hidden="true"></i><br>Salad</span></a>
                 </div>
                 </div>
-                <div class="col-md-4 gallery__item gallery__item__2">
+                <div class="col-md-4 gallery__item">
+                    <img clas="img-responsive" src="images/salmon2.jpg" alt="">
                     <div class="cover">
                      <a href=""><span><i class="fa fa-search" aria-hidden="true"></i><br>Fish</span></a>
                 </div>
                 </div>
-                <div class="col-md-4 gallery__item gallery__item__3">
+                <div class="col-md-4 gallery__item">
+                 <img clas="img-responsive" src="images/salmon4.jpg" alt="">
                 <div class="cover">
                      <a href=""><span><i class="fa fa-search" aria-hidden="true"></i><br>Other</span></a>
                 </div>
@@ -301,35 +337,48 @@
 <section class="meetUs" id="meet">
     <h2>Meet Us</h2>
        <div class="separator"></div>
-       <h3>On vous accueille au marche</h3>
+       <h3>On vous accueille au marche <br>
+       Bar a harengs houer a service 8am - 13pm
+       </h3>
         <div class="container">
             <div class="row">
                 <div class="map col-md-6">
-                    <h3>Jeudi et dimanche au marche Bastille</h3>
+                    
                       <iframe class="box__shadow" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41992.482705740484!2d2.3617197630473408!3d48.86716894946703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfc527f96919d9b4e!2sBar+%C3%A0+Harengs!5e0!3m2!1spl!2spl!4v1518871182868" 
                        width="500" height="400"
                       frameborder="0" style="border:0" allowfullscreen></iframe> 
                 </div>
-                <div class="map col-md-6">
-                    <h3>Mardi et vendredi au marche Popincourt</h3>
-                      <iframe class="box__shadow" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d901.5425167230297!2d2.3707878181239894!3d48.864565357464144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66dfcdd390001%3A0xc4b4811a450a729d!2sBar+%C3%A0+Harengs!5e0!3m2!1spl!2spl!4v1519562035609" width="500" height="400" frameborder="0" style="border:0" allowfullscreen></iframe> 
+                <div class="col-md-6 meetUs__text">
+                    <h3>Jeudi et dimanche Bar a harengs au<br> <strong>marche Bastille</strong></h3>
+                    <img class="img img-responsive" src="images/logo.jpg" alt="">                 
+                    
                 </div>
             </div>
-            <div class="row">
+               <div clas="row">
+               <div class="col-md-6 meetUs__text">
+                   <h3>Mardi et vendredi Bar a harengs au<br> <strong>marche Popincourt</strong></h3>
+                       <img class="img img-responsive" src="images/logo.jpg" alt=""> 
+                   </div>
+                <div class="map col-md-6">
+                
+                      <iframe class="box__shadow" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d901.5425167230297!2d2.3707878181239894!3d48.864565357464144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66dfcdd390001%3A0xc4b4811a450a729d!2sBar+%C3%A0+Harengs!5e0!3m2!1spl!2spl!4v1519562035609" width="500" height="400" frameborder="0" style="border:0" allowfullscreen></iframe> 
+                </div>
+            </div> 
+    </div>
+<div class="container">                     
+                    
+            <div class="row meetUs__text">                                   <h3>Samedi au marche Nation et Villette</h3>
+           
+
+
                 <div class="col-md-6 map">
-                    <h3>Samedi au marche Nation</h3>
                       <iframe class="box__shadow"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20207.71514438591!2d2.361480931866902!3d48.85569613655953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf9fe1d6321db4fa8!2sBar+%C3%A0+Harengs!5e0!3m2!1spl!2spl!4v1519561833945" width="500" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
                 <div class="map col-md-6">
-                    <h3>Samedi au marche Villette</h3>
                     <iframe class="box__shadow" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1873.5253263654552!2d2.373737059291963!3d48.87384428531552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfc527f96919d9b4e!2sBar+%C3%A0+Harengs!5e0!3m2!1spl!2spl!4v1519561967108" width="500" height="400" frameborder="0" style="border:0" allowfullscreen></iframe> 
                 </div>
-            </div>         
-             
-         
-  
-    </div>
-    
+            </div> 
+    </div>     
 </section>
 <section class="FAQ text-center" id="faq">
     <h2>FAQ</h2>
