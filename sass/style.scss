@@ -54,11 +54,13 @@ section {
 
 header {
   
-    height: 500px;
+    height: 100vh;
     width: 100%;
-    background-image: url(https://images.unsplash.com/photo-1495461199391-8c39ab674295?ixlib=rb-0.3.5&s=4d95d89bec9dda4f3cefd422f0a0b7f4&auto=format&fit=crop&w=1350&q=80);
-    background-size: cover;    
-    opacity: 0.9
+    background-image: url("/images/herings__salad.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center;
+    opacity: 0.9;
 }
 
 .header__title {
@@ -67,13 +69,14 @@ header {
     height: 150px;
     float: right;
     position: relative;
-    top: 320px;
+    top: 60vh;
     h1 {
-        margin: 12px auto;
+        margin: 12px 12px;
     }
     p {
         color: #fff;
-        font-size: 24px;        
+        font-size: 24px;
+        margin-right: 12px;
     }   
     @media #{$phone} {
         float: left;
