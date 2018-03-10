@@ -21,7 +21,7 @@ $desktop: "(min-width: 1024px)";
 
 .icon {
     font-size: 54px;
-    }
+}
 
 .box__shadow {
     border-radius: 12px;
@@ -29,9 +29,6 @@ $desktop: "(min-width: 1024px)";
     
 }
  
-
-
-
 body {
     h1, h2 {
         font-family: "Pacifico", sans-serif;
@@ -58,7 +55,7 @@ section {
 header {
   
     height: 500px;
-    max-width: 100%;
+    width: 100%;
     background-image: url(https://images.unsplash.com/photo-1495461199391-8c39ab674295?ixlib=rb-0.3.5&s=4d95d89bec9dda4f3cefd422f0a0b7f4&auto=format&fit=crop&w=1350&q=80);
     background-size: cover;    
     opacity: 0.9
@@ -85,20 +82,116 @@ header {
   
 }
 
+.navbar, .navbar-inverse {
+	border-radius: 0;
+	border: none;
+	margin-bottom: 0;
+	min-height: 80px;
+    background-color: $blueColor;
+}
+
+.nav li {
+	display: inline;
+	color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: #fff;
+	font-weight: bold;
+    font-size: 1.2em;
+	padding: 30px 25px 33px 25px;
+    text-transform: uppercase;
+
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #333 !important;
+    background-color: #fff !important;
+    transition: 0.7s all linear;
+	height: 100%;
+  }
+
+.navbar-logo {    
+    width: auto;
+    height: 1.5em;
+    line-height: 1.5em;
+    padding: 0;
+    float: left;
+    margin-right: 12px;
+}
+
+.navbar-brand {
+    font-family: "Pacifico", sans-serif;
+    font-size: 2em;
+    line-height: 1.2em;
+    color: #fff  !important;
+}
+
+.navbar-toggle {
+    margin-top: 12px;
+    height: 50px;
+    border: none;
+     border-color: transparent;
+    :hover {
+    background-color: $blueColor;
+                
+    }
+}
+
+.navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+   
+.navbar-toggle:hover {
+        background-color: $blueColor;
+
+}
+
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
 
 
+/*-
 nav {
-    text-align: center;
+    text-align: right;
     background-color: #183e6f;
     width: 100%;
-    ul li {
+     ul li {
         display: inline-block;
         a {
+            margin: 0 1em;
             display: block;
             color: #fff;
             font-weight: bold;
             height: 75px;
-            line-height: 180px;
+            line-height: 75px;
             display: block;
             font-size: 18px;
             text-decoration: none;
@@ -129,12 +222,31 @@ nav {
 color: #fff;    
 }
 
-nav ul  li a:hover {
+nav ul li a:hover {
      text-decoration: none;
-    color: #333;
+    color: #fff;
     border-bottom: 5px solid #fff;
     transition: .3s;
 }
+
+.icon-bar {
+    color: #fff;
+}
+
+.collapse {
+    background-color: $blueColor;
+}
+
+@media#{$phone} {
+    nav {
+        height: 75px;        
+    }
+}
+
+
+
+-*/
+
 
 .offer__row {
     display: flex;
@@ -202,6 +314,7 @@ ul {
 }
 
 .row__salad__name {
+    margin-left: 2em;
     display: flex;
     justify-content: space-around;
     margin-bottom: 2em;
@@ -325,11 +438,19 @@ ul {
     }
 }
 
+
 .map {
     margin: 2em auto;
+
 }
 
 .meetUs__row__1 { @media #{$tablet} {
+    display: flex;
+    flex-direction: column-reverse;    
+}
+}
+
+.meetUs__row__1 { @media #{$phone} {
     display: flex;
     flex-direction: column-reverse;    
 }

@@ -19,11 +19,47 @@
 	<link rel="stylesheet" type="text/css" href="css/grid.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body class="text-center">
-   <nav class="navbar navbar-fixed-top">
+<body class="text-center" data-spy="scroll" data-target=".navbar" data-offset="60" >
+  
+
+<nav class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+			<div class="container">
+         <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+       <a class="navbar-brand" href="#home">Bar a harengs
+      <img class="navbar-logo" src="images/logo.jpg" alt=""></a>
+    </div>
+    
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+				    <li><a href="#offer">Offer</a></li>
+			<li><a href="#menu">Menu</a></li>
+			<li><a href="#gallery">Gallery</a></li>
+			<li><a href="#about">About Us</a></li>
+   			<li><a href="#contact">Contact</a></li>
+			<li><a href="#meet">Meet Us</a></li>
+        	<li><a href="#faq">faq</a></li> 
+				</ul>
+			</div>
+    </div>
+		</nav>
+
+
+
+
+  
+    <!---  
+   <nav class="navbar navbar-fixed-top" role="navigation">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <button type="button" class="navbar-toggle colapsed" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
@@ -44,12 +80,15 @@
     </div>
   </div>
 </nav>
+  
+--->
    
-   <!---
+   <!-------
     <nav>
-       <a href="#home"><img src="images/logo.jpg" alt=""></a>
-        <ul>
-            <li></li>
+    <a class="navbar-brand" href="#home">Bar a harengs
+      <img class="navbar-logo" src="images/logo.jpg" alt=""></a>
+           <ul>
+           
 	        <li><a href="#offer">Offer</a></li>
 			<li><a href="#menu">Menu</a></li>
 			<li><a href="#gallery">Gallery</a></li>
@@ -57,11 +96,25 @@
    			<li><a href="#contact">Contact</a></li>
 			<li><a href="#meet">Meet Us</a></li>
         	<li><a href="#faq">faq</a></li>
-        </ul>
+        	
+        	  <input type="checkbox" id="menu-button">
+         <label for='menu-button'>☰</label>
+           
+             <ul class="drop__down">
+             <li><a href="#offer">Offer</a></li>
+			<li><a href="#menu">Menu</a></li>
+			<li><a href="#gallery">Gallery</a></li>
+			<li><a href="#about">About Us</a></li>
+   			<li><a href="#contact">Contact</a></li>
+			<li><a href="#meet">Meet Us</a></li>
+        	<li><a href="#faq">faq</a></li>
+        	</ul>      
+        
+          </ul>
     </nav>
-    --->
+
     
-    
+    ------>
     
 <header id="home">    
     <div class="header__title">
@@ -345,7 +398,7 @@
                 <div class="map col-xs-12 col-sm-12 col-md-6 col-lg-6">
                     
                       <iframe class="box__shadow" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41992.482705740484!2d2.3617197630473408!3d48.86716894946703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfc527f96919d9b4e!2sBar+%C3%A0+Harengs!5e0!3m2!1spl!2spl!4v1518871182868" 
-                       width="500" height="400"
+                       width="500" height="400" 
                       frameborder="0" style="border:0" allowfullscreen></iframe> 
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 meetUs__text">
