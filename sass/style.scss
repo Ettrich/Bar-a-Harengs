@@ -213,6 +213,16 @@ ul {
 }
 }
 
+.row__salad__name__1 {
+    display: flex;
+    justify-content: center;
+    @media #{$tablet} {display: block;}
+     @media #{$phone} {display: block;}
+    
+}
+
+
+
 .row__salad__name {
     display: flex;
     justify-content: space-around;
@@ -281,9 +291,8 @@ ul {
 	width: 400px;
 	margin: 12px auto;
     overflow-x: hidden;
-    @media#{$phone}{
-        width: 100%;
-    }
+    
+   
 }
 
 #carousel ul {
@@ -298,6 +307,11 @@ ul {
 		height: 400px;
 		list-style: none;
 		float:	left;
+}
+
+#carousel ul li img {
+    width: 400px;
+    height: 400px;
 }
 
 .contact {
