@@ -85,7 +85,7 @@ header {
 }
 
 .nav li {
-  display: inline;
+  display: inline-block;
   color: white;
 }
 
@@ -93,7 +93,7 @@ header {
   color: #fff;
   font-weight: bold;
   font-size: 1.2em;
-  padding: 30px 25px 33px 25px;
+  padding: 30px 12px 33px 12px;
   text-transform: uppercase;
 }
 
@@ -140,108 +140,6 @@ header {
   background-color: #183e6f;
 }
 
-.slideanim {
-  visibility: hidden;
-}
-
-.slide {
-  animation-name: slide;
-  -webkit-animation-name: slide;
-  animation-duration: 1s;
-  -webkit-animation-duration: 1s;
-  visibility: visible;
-}
-
-@keyframes slide {
-  0% {
-    opacity: 0;
-    transform: translateY(70%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-}
-
-@-webkit-keyframes slide {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(70%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0%);
-  }
-}
-
-/*-
-nav {
-    text-align: right;
-    background-color: #183e6f;
-    width: 100%;
-     ul li {
-        display: inline-block;
-        a {
-            margin: 0 1em;
-            display: block;
-            color: #fff;
-            font-weight: bold;
-            height: 75px;
-            line-height: 75px;
-            display: block;
-            font-size: 18px;
-            text-decoration: none;
-            text-transform: uppercase;
-            }
-              
-        }
-}
-
-
-.navbar-logo {    
-            width: auto;
-            height: 1.5em;
-            line-height: 1.5em;
-            padding: 0;
-            float: left;
-            margin-right: 12px;
-}
-
-.navbar-brand {
-    font-family: "Pacifico", sans-serif;
-    font-size: 2em;
-    line-height: 1em;
-    color: #fff;   
-}
-
-.navbar-brand:hover {   
-color: #fff;    
-}
-
-nav ul li a:hover {
-     text-decoration: none;
-    color: #fff;
-    border-bottom: 5px solid #fff;
-    transition: .3s;
-}
-
-.icon-bar {
-    color: #fff;
-}
-
-.collapse {
-    background-color: $blueColor;
-}
-
-@media(max-width: 767px) {
-    nav {
-        height: 75px;        
-    }
-}
-
-
-
--*/
 .offer__row {
   display: flex;
   justify-content: center;
@@ -317,7 +215,6 @@ nav ul li a:hover {
 }
 
 .row__salad__name {
-  margin-left: 2em;
   display: flex;
   justify-content: space-around;
   margin-bottom: 2em;
@@ -383,8 +280,14 @@ nav ul li a:hover {
 
 #carousel {
   width: 400px;
-  overflow: hidden;
   margin: 12px auto;
+  overflow-x: hidden;
+}
+
+@media (max-width: 767px) {
+  #carousel {
+    width: 100%;
+  }
 }
 
 #carousel ul {
@@ -447,13 +350,21 @@ nav ul li a:hover {
 }
 
 .map {
-  margin: 2em auto;
+  margin: 25px auto;
+}
+
+@media (max-width: 767px) {
+  .map {
+    width: 100%;
+    height: 400px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .meetUs__row__1 {
     display: flex;
     flex-direction: column-reverse;
+    justify-content: space-around;
   }
 }
 
@@ -466,7 +377,12 @@ nav ul li a:hover {
 
 .FAQ ul {
   margin: 0 auto;
-  width: 50%;
+}
+
+@media (min-width: 1024px) {
+  .FAQ ul {
+    width: 50%;
+  }
 }
 
 .FAQ ul li:nth-child(odd) {
