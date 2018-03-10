@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 $blueColor: #183e6f;
+$phone: "(max-width: 767px)";
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$desktop: "(min-width: 1024px)";
+
     
 .separator {
   content: '';
@@ -54,7 +58,7 @@ section {
 header {
   
     height: 500px;
-    width: 100%;
+    max-width: 100%;
     background-image: url(https://images.unsplash.com/photo-1495461199391-8c39ab674295?ixlib=rb-0.3.5&s=4d95d89bec9dda4f3cefd422f0a0b7f4&auto=format&fit=crop&w=1350&q=80);
     background-size: cover;    
     opacity: 0.9
@@ -74,6 +78,7 @@ header {
         color: #fff;
         font-size: 24px;        
     }
+    
   
 }
 
@@ -128,11 +133,20 @@ nav ul  li a:hover {
     transition: .3s;
 }
 
+.offer__row {
+    display: flex;
+    justify-content: center;
+    @media #{$tablet} {display: block;}
+     @media #{$phone} {display: block;}
+    
+}
+
 
 .offer__item {
     display: block;
     padding: 50px;
 }
+ 
    
 .offer__item:hover {
     background-color: $blueColor;
@@ -223,7 +237,12 @@ ul {
         text-align: left;
     }
 }
-   
+
+.about__text {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 #carousel {
 	width: 400px;
@@ -244,7 +263,6 @@ ul {
 		list-style: none;
 		float:	left;
 }
-
 
 .contact {
     margin: 50px auto;
@@ -278,13 +296,24 @@ ul {
     }
     .meetUs__text {
         padding-top: 50px;
+        display: block;
         img {
             height: 100px;
             width: auto;
             border-radius: 10%;
-            margin: 0 auto;
+            margin: 2em auto;
         }
     }
+}
+
+.map {
+    margin: 2em auto;
+}
+
+.meetUs__row__1 { @media #{$tablet} {
+    display: flex;
+    flex-direction: column-reverse;    
+}
 }
 
 .FAQ {
