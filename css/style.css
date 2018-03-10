@@ -53,7 +53,7 @@ header {
 
 .header__title {
   color: #fff;
-  width: 40%;
+  max-width: 40%;
   height: 150px;
   float: right;
   position: relative;
@@ -67,6 +67,13 @@ header {
 .header__title p {
   color: #fff;
   font-size: 24px;
+}
+
+@media (max-width: 767px) {
+  .header__title {
+    float: left;
+    top: 200px;
+  }
 }
 
 nav {
@@ -169,8 +176,20 @@ nav ul li a:hover {
 }
 
 .menu__row {
-  height: 450px;
-  overflow: hidden;
+  height: auto;
+  overflow: visible;
+}
+
+@media (max-width: 767px) {
+  .menu__row h3 {
+    margin: 1em auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .menu__row h3 {
+    margin: 1em auto;
+  }
 }
 
 .menu__row .img__menu {
@@ -178,6 +197,12 @@ nav ul li a:hover {
   width: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.row__salad__name {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2em;
 }
 
 .gallery__item {

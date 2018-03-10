@@ -66,7 +66,7 @@ header {
 
 .header__title {
     color: #fff;
-    width: 40%;
+    max-width: 40%;
     height: 150px;
     float: right;
     position: relative;
@@ -77,8 +77,11 @@ header {
     p {
         color: #fff;
         font-size: 24px;        
+    }   
+    @media #{$phone} {
+        float: left;
+        top: 200px; 
     }
-    
   
 }
 
@@ -178,14 +181,30 @@ ul {
 }
 
 .menu__row {
-    height: 450px;
-    overflow: hidden;
+    height: auto;
+    overflow: visible;
+    @media #{$phone}{
+        h3 {
+            margin: 1em auto;
+        }
+    }
+      @media #{$tablet}{
+        h3 {
+            margin: 1em auto;
+        }
+    }
     .img__menu {
         height: 350px;
         width: 100%;
         object-fit: cover;
         object-position: center;
 }
+}
+
+.row__salad__name {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2em;
 }
 
 .gallery__item {
