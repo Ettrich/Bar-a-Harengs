@@ -46,7 +46,7 @@ section {
 header {
   height: 100vh;
   width: 100%;
-  background-image: url("/images/herings__salad.jpg");
+  background-image: url("../images/herings__salad.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -88,7 +88,7 @@ header {
 }
 
 .nav li {
-  display: inline-block;
+  display: block;
   color: white;
 }
 
@@ -178,6 +178,8 @@ header {
 
 .menu h3 {
   font-size: 36px;
+  margin-bottom: 25px;
+  padding-top: 25px;
 }
 
 .menu ul {
@@ -196,6 +198,7 @@ header {
 .menu__row {
   height: auto;
   overflow: visible;
+  margin: 25px auto;
 }
 
 @media (max-width: 767px) {
@@ -215,6 +218,7 @@ header {
   width: 100%;
   object-fit: cover;
   object-position: center;
+  margin-top: 100px;
 }
 
 .row__salad__name__1 {
