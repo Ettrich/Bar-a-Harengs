@@ -50,7 +50,7 @@ header {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  opacity: 0.9;
+  opacity: .9;
 }
 
 .header__title {
@@ -60,6 +60,7 @@ header {
   float: right;
   position: relative;
   top: 60vh;
+  text-shadow: 2px 2px #333;
 }
 
 .header__title h1 {
