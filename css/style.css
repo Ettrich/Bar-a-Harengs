@@ -46,6 +46,7 @@ section {
 header {
   height: 100vh;
   width: 100%;
+  margin: 0;
   background-image: url("../images/herings__salad.jpg");
   background-attachment: fixed;
   background-size: cover;
@@ -115,6 +116,16 @@ header {
   padding: 0;
   float: left;
   margin-right: 12px;
+}
+
+@media (max-width: 767px) {
+  .navbar-logo {
+    position: relative;
+    top: 5px;
+    height: 1em;
+    line-height: 2em;
+    margin-right: 5px;
+  }
 }
 
 .navbar-brand {
