@@ -84,7 +84,9 @@ header {
         float: left;
         top: 200px; 
     }
-  
+    @media screen and (orientation:landscape) {
+        top:100px;
+    }  
 }
 
 .navbar, .navbar-inverse {

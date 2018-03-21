@@ -81,6 +81,12 @@ header {
   }
 }
 
+@media screen and (orientation: landscape) {
+  .header__title {
+    top: 100px;
+  }
+}
+
 .navbar, .navbar-inverse {
   border-radius: 0;
   border: none;
