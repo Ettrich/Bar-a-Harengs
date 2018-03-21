@@ -84,7 +84,7 @@ header {
         float: left;
         top: 200px; 
     }
-    @media screen and (orientation:landscape) {
+    @media #{$phone} and (orientation:landscape) {
         top:100px;
     }  
 }

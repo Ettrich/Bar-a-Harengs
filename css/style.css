@@ -81,7 +81,7 @@ header {
   }
 }
 
-@media screen and (orientation: landscape) {
+@media (max-width: 767px) and (orientation: landscape) {
   .header__title {
     top: 100px;
   }
